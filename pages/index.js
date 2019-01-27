@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
+import Layout from '../components/layout';
 
 class IndexPage extends Component {
     
     state = { user: null }
     
-    handleKeyUp = evt => {
-      if (evt.keyCode === 13) {
-        const user =  evt.target.value;
-        this.setState({ user });
-      }
-    }
-    
     render() {
-        return(<div>Whaa</div>)
+        return(
+        <Layout pageTitle="React simple chat">
+        <main>
+          <div>
+          </div>
+        </main>
+      </Layout>
+      )
     }
 }
-
 
 export default () => (
     <IndexPage />
